@@ -19,7 +19,12 @@ We use cloud ETL process, we create an AWS RDS database with tables in pgAdmin, 
 Determine Bias of Vine Reviews
 Using PySpark, we determine if there is any bias towards reviews that were written as part of the Vine program. For this analysis, we determine if having a paid Vine review makes a difference in the percentage of 5-star reviews.
 
-How many Vine reviews and non-Vine reviews were there?
-How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
-What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
+## Summary
+
+  Vine members made up only 0.07% (33) of the reviews whereas the remaining 96.75% were Non-Vine members (45246) and rest of the votes are anonymous.  15 Vine reviews out of 33 were 5 stars and 23639 out of 45246 non-Vine reviews were 5 stars.Reviews given by Vine members doesn't have much effect on ratings.So we can say that the reviews are not biased. 
+  0.03% of Vine reviews were 5 stars and 50.55% of non-Vine reviews were 5 stars.
+ The percent of Paid 5 star to total Paid is 45.46 and percent of NonPaid 5 star to Total Non Paid is 55.25.Eventhough the number of vine members are not significant,the vine members did not show a bias in their reviews.
+ 
+ 
+ 
 
