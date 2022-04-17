@@ -1,10 +1,10 @@
 # Amazon_Vine_Analysis
 ## Introduction
-In this project we analyze Amazon reviews written by members of the paid Amazon Vine program. The Amazon Vine program is a service that allows manufacturers and publishers to receive reviews for their products. Companies like SellBy pay a small fee to Amazon and provide products to Amazon Vine members, who are then required to publish a review.We pick one of the datasets from approximately 50 datasets and use PySpark to perform the ETL process to extract the dataset, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin. 
+ In this project we analyze Amazon reviews written by members of the paid Amazon Vine program. The Amazon Vine program is a service that allows manufacturers and publishers to receive reviews for their products. Companies like SellBy pay a small fee to Amazon and provide products to Amazon Vine members, who are then required to publish a review.We pick one of the datasets from approximately 50 datasets and use PySpark to perform the ETL process to extract the dataset, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin. 
 
 ## Perform ETL on Amazon Product Reviews
 
-We use cloud ETL process, we create an AWS RDS database with tables in pgAdmin, pick a dataset from the Amazon Review datasets )and extract the dataset into a DataFrame. We transform the DataFrame into four separate DataFrames that match the table schema in pgAdmin. Then, upload the transformed data into the appropriate tables and run queries in pgAdmin to confirm that the data has been uploaded. 
+ We use cloud ETL process, we create an AWS RDS database with tables in pgAdmin, pick a dataset from the Amazon Review datasets )and extract the dataset into a DataFrame. We transform the DataFrame into four separate DataFrames that match the table schema in pgAdmin. Then, upload the transformed data into the appropriate tables and run queries in pgAdmin to confirm that the data has been uploaded. 
 
 <img width="1266" alt="Screen Shot 2022-04-14 at 11 50 24 PM" src="https://user-images.githubusercontent.com/72629108/163667024-18ff6342-40f6-434b-ac65-073bb413519a.png">
 
@@ -19,7 +19,10 @@ We use cloud ETL process, we create an AWS RDS database with tables in pgAdmin, 
 
 ## Determine Bias of Vine Reviews
 
-Using PySpark, we determine if there is any bias towards reviews that were written as part of the Vine program. For this analysis, we determine if having a paid Vine review makes a difference in the percentage of 5-star reviews.
+ Using PySpark, we determine if there is any bias towards reviews that were written as part of the Vine program. For this analysis, we determine if having a paid Vine review makes a difference in the percentage of 5-star reviews.
+
+<img width="1308" alt="Screen Shot 2022-04-17 at 8 21 18 AM" src="https://user-images.githubusercontent.com/72629108/163721012-de29b741-bba9-45ac-825a-f91cdf62b850.png">
+
 
 ## Summary
 
